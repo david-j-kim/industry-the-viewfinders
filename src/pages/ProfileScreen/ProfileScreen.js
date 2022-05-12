@@ -1,4 +1,4 @@
-import './Sample.scss';
+import './ProfileScreen.scss';
 import React, { Component } from 'react';
 import axios from 'axios';
 
