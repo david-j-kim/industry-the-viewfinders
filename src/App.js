@@ -1,7 +1,7 @@
 //global
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Sample from './pages/Sample/Sample';
+import ProfileScreen from './pages/ProfileScreen/ProfileScreen';
 import Navigation from './components/Navigation/Navigation';
 
 
@@ -11,7 +11,7 @@ function App() {
         <Navigation />
 
         <Switch>
-          <Route path='/' exact component={Sample} />
+          <Route path='/' exact component={ProfileScreen} />
 
 
 
