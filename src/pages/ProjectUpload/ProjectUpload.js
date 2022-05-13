@@ -1,15 +1,15 @@
-import './ProjectUpload.scss';
+import './Sample2.scss';
 import React, { Component } from 'react';
-import UploadComponent from '../../components/UploadComponent/UploadComponent';
 
 class Sample2 extends Component {
     
     render() {
 
         return (
-            <div>
-                <UploadComponent/>
-            </div>
+
+            <div>Hello World! - sample2</div>
+
+
         );
 
     }
