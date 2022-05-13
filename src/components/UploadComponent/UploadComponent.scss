@@ -4,6 +4,12 @@
     align-items: center;
     padding: 2rem 10rem;
 
+    &__link{
+        text-decoration: none;
+        width: 40rem;
+        color: black;
+    }
+
     &__button{
         padding: 0.3rem 0.6rem;
         align-self: flex-start;
