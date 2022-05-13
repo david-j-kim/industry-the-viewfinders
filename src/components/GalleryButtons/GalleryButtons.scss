@@ -1,0 +1,9 @@
+@use '../../styles/partials/variables.scss' as *;
+@use '../../styles/partials/fonts.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
+@use '../../styles/partials/global.scss' as *;
+
+.gallery-buttons {
+    padding: 0 1.5rem;
+    margin: 1.5rem 0.5rem;
+}

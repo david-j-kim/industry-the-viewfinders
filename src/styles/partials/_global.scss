@@ -6,8 +6,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
 }
 
-#root {
+.content {
   display: flex;
+  flex-wrap: nowrap;
 }
