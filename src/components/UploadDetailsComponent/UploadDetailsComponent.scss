@@ -4,7 +4,7 @@
         border: none;
         font-size: 2.5rem;
         align-self: flex-start;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     &__text{
@@ -31,7 +31,7 @@
         }
 
     &__image{
-        width: 100%;
+        width: 85%;
     }
 
     &__flex{
@@ -41,20 +41,22 @@
     }
 
     &__button{
-        border: none;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0.8rem;
+        align-self: flex-start;
+        background-color: white;
+        border: 1px solid grey;
         border-radius: 4px;
-        background-color: #F8D4CF;
-        color: #E35241;
         font-weight: bold;
 
         &--save{
+            border: none;
             margin-right: 1rem;
             color: black;
             background-color: #D3D3D3;
         }
 
         &--continue{
+            border: none;
             color: white;
             background-color: #E35241;
         }

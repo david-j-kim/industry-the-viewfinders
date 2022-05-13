@@ -14,10 +14,8 @@ function App() {
   return (
     <Router>
         <NavigationTop />
-
         <div className="content">
           <NavigationSide />
-
           <Switch>
             <Redirect from="/" to="/home" exact/>
             <Route path='/home' exact component={HomeScreen} />

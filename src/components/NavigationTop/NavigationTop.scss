@@ -4,14 +4,14 @@
 @use '../../styles/partials/global.scss' as *;
 
 .header {
-    padding: 1rem 0 0.5rem 2.5rem;
+    padding: 1.2rem 1.5rem;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(224, 221, 221);
 
     &__logo {
-        width: 7.5rem;
-        height: 1.5rem;
+        min-width: 5rem;
+        height: 1.45rem;
     }
 
     &__upload {
