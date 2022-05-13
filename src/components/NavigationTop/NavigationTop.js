@@ -13,7 +13,10 @@ function NavigationTop() {
     return (
         
         <nav className="header">
+
+            <Link to="/">
             <img className="header__logo" src={logo} alt="logo"/>
+            </Link>
 
             <Link to="/upload">
                 <button className={`header__upload ${visible}`} type="button">Upload</button>
