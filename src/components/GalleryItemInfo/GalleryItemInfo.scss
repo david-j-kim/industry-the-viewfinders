@@ -23,4 +23,10 @@
         align-items: center;
         gap: 0.5rem;
     }
+
+    &__heart {
+        position: relative;
+        top: -14.5rem;
+        left: 5rem;
+    }
 }

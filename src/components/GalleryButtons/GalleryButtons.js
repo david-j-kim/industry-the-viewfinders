@@ -1,11 +1,11 @@
 import './GalleryButtons.scss';
 
-function GalleryButtons( { name }) {
+function GalleryButtons( { name, clickFn }) {
 
 
     return (
         
-        <button className="gallery-buttons" type="button">{name}</button>
+        <button onClick={()=>clickFn(name)} className="gallery-buttons" type="button">{name}</button>
 
     );
 

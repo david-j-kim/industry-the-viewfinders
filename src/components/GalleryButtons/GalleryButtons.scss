@@ -4,6 +4,16 @@
 @use '../../styles/partials/global.scss' as *;
 
 .gallery-buttons {
-    padding: 0 1.5rem;
+    padding: 0.25rem 1.5rem;
     margin: 1.5rem 0.5rem;
+    border: none;
+    background-color: white;
+    color: #757575;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    &:hover {
+        color: $Shutter-Stock;
+        font-weight: bold;
+    }
 }

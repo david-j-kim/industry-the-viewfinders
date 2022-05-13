@@ -16,6 +16,13 @@
             margin: 0 1rem;
             width: 8rem;
         }
+        
+        &__text {
+            position: relative;
+            top: 2.2rem;
+            left: 2rem;
+            color: white;
+        }
     }
 
     &__filter {
@@ -25,6 +32,10 @@
 
     &__message {
         margin-left: 1rem;
+        margin-right: 4rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
     }
 
     &__items {
@@ -36,7 +47,9 @@
     }
     
     &__item {
-        width: 16rem;
+        object-fit: cover;
+        width: 15rem;
+        height: 15rem;
     }
 }
 

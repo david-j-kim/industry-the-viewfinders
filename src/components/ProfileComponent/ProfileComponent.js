@@ -3,7 +3,6 @@ import './ProfileComponent.scss'
 import facebook from '../../assets/images/logo/facebook.png'
 import heart from '../../assets/images/logo/heart.png'
 import linkedin from '../../assets/images/logo/linkedin.png'
-import search from '../../assets/images/logo/search.png'
 import thumbs from '../../assets/images/logo/thumbs.png'
 import twitter from '../../assets/images/logo/twitter.png'
 import views from '../../assets/images/logo/views.png'
@@ -20,7 +19,6 @@ import Profile4 from '../../assets/images/Profile4.png'
 const ProfileComponent = () => {
     return (
         <div className='profile'>
-            <img className='profile__search' alt='search' src={search}></img>
             <div className="profile__box">
                 <img className='profile__image' alt='profile' src={Profile}></img>
                 <div>

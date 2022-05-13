@@ -16,11 +16,11 @@ function GalleryItemInfo() {
             </div>
 
             <div className="item-info__right">
+                <img className="item-info__heart" src={unfilledHeart} />
                 <img className="item-info__thumbs" src={thumbsUp} />
                 <h4>#</h4>
                 <img className="item-info__view" src={eyeFill} />
                 <h4>#</h4>
-                <img className="item-info__heart" src={unfilledHeart} />
             </div>
 
 
