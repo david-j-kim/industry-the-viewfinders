@@ -15,7 +15,7 @@ import imageTwo from '../../assets/images/gallery/image2.png';
 import imageThree from '../../assets/images/gallery/image3.png';
 import imageFour from '../../assets/images/gallery/image4.png';
 import imageFive from '../../assets/images/gallery/image5.png';
-import imageSix from '../../assets/images/gallery/image6.png';
+import imageSix from '../../assets/images/gallery/image6.jpg';
 import imageSeven from '../../assets/images/gallery/image7.png';
 import imageEight from '../../assets/images/gallery/image8.png';
 import { v4 as uuid } from 'uuid';

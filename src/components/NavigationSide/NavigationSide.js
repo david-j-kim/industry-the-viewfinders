@@ -46,7 +46,7 @@ function NavigationSide() {
                     className="navbar__link" 
                     to="/discover"
                     activeClassName="navbar__link--active"
-                    isActive={() => !pathname.includes('/home')}>
+                    isActive={() => pathname.includes('/discover')}>
                 <img className="navbar__icon" src={discover} alt="discover"/>
                 <h5 className="navbar__icon-text">Discover</h5>
             </NavLink>
@@ -60,8 +60,15 @@ function NavigationSide() {
             </div>
 
             <div className="navbar__bottom">
+
+            <NavLink
+                    className="navbar__link" 
+                    to="/profile"
+                    activeClassName="navbar__link--active"
+                    isActive={() => pathname.includes('/profile')}>
                 <img className="navbar__icon" src={account} alt="account"/>
                 <h5 className="navbar__icon-text">Account</h5>
+            </NavLink>
 
                 <img className="navbar__icon" src={help} alt="help"/>
                 <h5 className="navbar__icon-text">Help</h5>
