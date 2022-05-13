@@ -1,0 +1,140 @@
+@use '../../styles/partials/variables' as *;
+
+.popup-overlay{
+    background-color: rgba($color:black, $alpha: 0.8);
+}
+.popup {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 0 4rem 2.5rem 4rem;
+    margin: 0 3rem;
+
+    &__title {
+        margin: 2.25rem 0;
+        color: black;
+    }
+
+    &__feed{
+        display: flex;
+    }
+
+    &__image{
+        margin-top: 0.7rem;
+        margin-right: 2.5rem;
+    }
+
+    &__content {
+        margin: 1rem 0;
+        font-weight: bold;
+        @include tablet{
+            width: 100%;
+        }
+    }
+    &__actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__flex{
+        display: flex;
+        margin-top: 3rem;
+    }
+
+    &__text--flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text--input{
+        padding: 0.8rem 0.5rem;
+        border-radius: 4px;
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    &__text--color{
+        color: #E35241;
+    }
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 14px;
+        right: 4.75rem;
+        top: 0.75rem;
+        font-size: 1.5rem;
+        background-color: white;
+        border: none;
+
+    }
+
+    &__button--generate{
+        height: 2rem;
+        align-self: flex-end;
+        border: none;
+        border-radius: 10px;
+        padding: 0.3rem 1rem;
+        color: #E35241;
+        background-color: #F8D4CF;
+        font-weight: bold;
+    }
+
+    &__button-publish {
+        color: white;
+        background-color: #E35241;
+        height: 2rem;
+        padding: 0.2rem 1.2rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        margin-left: 3rem;
+        @include tablet {
+            width: auto;
+            height: 2rem;
+        }
+    }
+
+    &__button-save {
+        color: black;
+        font-weight: bold;
+        background-color: #D3D3D3;
+        height: 2rem;
+        padding: 0.2rem 1.2rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        @include tablet {
+            width: auto;
+            height: 2rem;
+        }
+    }
+    &__button-cancel {
+        color: gray;
+        background-color: white;
+        height: 2rem;
+        padding: 0.2rem 1.2rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #D3D3D3;
+        cursor: pointer;
+        margin-right: 0.5rem;
+        @include tablet {
+            width: auto;
+            height: 2rem;
+        }
+    }
+  
+  
+}
