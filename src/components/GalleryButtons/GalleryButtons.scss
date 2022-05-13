@@ -15,5 +15,19 @@
 
     &:hover {
         color: $Shutter-Stock;
+        cursor: pointer;
+        animation-name: away;
+        animation-duration: 500ms;
+        animation-iteration-count: 2;
+        animation-timing-function: linear;
+    }
+
+    @keyframes away {
+        0% {
+            top: 0px; left: 0px;
+        }
+        100% {
+            top: 0px; left: 30px;
+        }
     }
 }

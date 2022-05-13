@@ -8,6 +8,16 @@ import './PopUp.scss'
 
 
 const PopUp = () => {
+
+let generateActivate = "";
+
+const handleClick = () => {
+    let x = document.getElementById("toggle");
+    let y = document.getElementById("toggle2");
+    x.style.display = "block";
+    y.style.display = "block";
+}
+
     return (
         <Popup trigger={<button className='details__button details__button--continue'>Continue</button>} modal nested>
         {close => (
@@ -41,15 +51,15 @@ const PopUp = () => {
                         <p className="popup__content">Associate Shutterstock Assets</p>
                         <div className='popup__text--flex'>
                             <p className="popup__text--generate">Generate links to asset sources found in this project</p>
-                            <button className='popup__button--generate'>Generate</button>
+                            <button onClick={handleClick}className='popup__button--generate'>Generate</button>
                         </div>
                     </div>
                     <div>
-                        <div className='popup__images'>
+                        <div id="toggle"  className='popup__images'>
                             <img className='popup__thumb' alt='mona' src={MonaThumb}></img>
                             <p>Royalty-free <a className='popup__links' href=''>stock illustration ID: 1886589148</a></p>
                         </div>
-                        <div className='popup__images'>
+                        <div id="toggle2" className='popup__images'>
                             <img className='popup__thumb' alt='mask' src={Mask}></img>
                             <p>Royalty-free <a className='popup__links' href=''>stock illustration ID: 1886589148</a></p>
                         </div>
