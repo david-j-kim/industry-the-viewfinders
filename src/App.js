@@ -5,6 +5,10 @@ import GalleryList from './pages/GalleryList/GalleryList';
 import NavigationTop from './components/NavigationTop/NavigationTop';
 import NavigationSide from './components/NavigationSide/NavigationSide';
 import ProjectUpload from './pages/ProjectUpload/ProjectUpload'
+import ProfileScreen from './pages/ProfileScreen/ProfileScreen';
+import ProjectUpload from './pages/ProjectUpload/ProjectUpload';
+import ProjectUploadDetails from './pages/ProjectUploadDetails/ProjectUploadDetails';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 
 
 function App() {
@@ -18,7 +22,9 @@ function App() {
           <Switch>
             <Route path='/discover' exact component={GalleryList} />
             <Route path='/upload' exact component={ProjectUpload}/>
-
+            <Route path='/' exact component={ProfileScreen} />
+            <Route path='/upload/details' exactcomponent={ProjectUploadDetails}/>
+            <Route path='/profile' exact component={ProfilePage}/>
           </Switch>
         </div>
 
