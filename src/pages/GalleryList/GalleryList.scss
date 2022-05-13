@@ -24,6 +24,9 @@
         border-radius: 10px;
         border: none;
         padding-left: 1rem;
+        width: 100%;
+        border-top-right-radius:0;
+        border-bottom-right-radius: 0;
     }
 
     &__search{
