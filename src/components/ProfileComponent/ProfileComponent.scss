@@ -1,0 +1,98 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+
+
+
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+
+    &__image{
+        margin-right: 1.5rem;
+    }
+
+    &__title{
+        font-size: 2.5rem;
+    }
+
+    &__text{
+        margin: 1.5rem 0;
+        font-weight: 500;
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+
+        &--border{
+            border-left: 1px solid gray;
+            padding-left: 1rem;
+        }
+
+        &--button{
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0.3rem 1.5rem;
+            border-radius: 20px;
+            margin-right: 1rem;
+        }
+
+        &--social{
+            margin-right: 1rem;
+        }
+
+        &--text{
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        margin: 3rem 0;
+
+        &--text{
+            font-weight: 500;
+            margin-right: 2rem;
+        }
+
+        &--created{
+            font-weight: bold;
+            border-bottom: 4px solid #E35241;
+        }
+    }
+
+    &__pictures{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    &__subtext{
+        display: flex;
+        align-items: center;
+
+        &--icons{
+            display: flex;
+            align-items: center;
+            margin-right: 0.5rem;
+        }
+
+        &--text{
+            font-size: 0.8rem;
+            margin-right: 1rem;
+
+        }
+
+        &--width{
+            max-height: 0.9rem;
+            min-width: 0.9rem;
+        }
+    }
+}

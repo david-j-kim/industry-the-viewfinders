@@ -1,0 +1,62 @@
+.details{
+
+    &__title{
+        border: none;
+        font-size: 2.5rem;
+        align-self: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    &__text{
+        border: none;
+        font-size: 1rem;
+        align-self: flex-start;
+        margin-top: 1rem;        
+    }
+
+    &__text::placeholder{
+        font-family: 'Roboto';
+    }
+
+    &__title::placeholder{
+        font-family: 'Roboto';
+        border: none;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 10rem;
+        }
+
+    &__image{
+        width: 100%;
+    }
+
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 7rem 0 7rem;
+    }
+
+    &__button{
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        background-color: #F8D4CF;
+        color: #E35241;
+        font-weight: bold;
+
+        &--save{
+            margin-right: 1rem;
+            color: black;
+            background-color: #D3D3D3;
+        }
+
+        &--continue{
+            color: white;
+            background-color: #E35241;
+        }
+    }
+}

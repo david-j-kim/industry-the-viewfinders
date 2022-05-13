@@ -1,0 +1,12 @@
+
+@use '../../styles/partials/variables.scss' as *;
+@use '../../styles/partials/fonts.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
+@use '../../styles/partials/global.scss' as *;
+
+.home {
+    background-image: url('../../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
+    width: 100%;
+}
