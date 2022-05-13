@@ -100,7 +100,7 @@ const ProfileComponent = () => {
                         <p className="profile__subtext--text">Created at May 13th 00:49 AM</p>
                         <div className="profile__subtext--icons">
                             <img className="profile__subtext--width" alt='thumbs' src={thumbs}></img>
-                            <p>190</p>
+                            <p>19</p>
                         </div>
                         <div className="profile__subtext--icons">
                             <img className="profile__subtext--width" alt='views' src={views}></img>
