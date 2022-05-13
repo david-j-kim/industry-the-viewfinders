@@ -26,7 +26,11 @@
 
     &__heart {
         position: relative;
-        top: -14.5rem;
-        left: 5rem;
+        top: -17.5rem;
+        left: 8rem;
+
+        &--hide {
+            display: none;
+        }
     }
 }

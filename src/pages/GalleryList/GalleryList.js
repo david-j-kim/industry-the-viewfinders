@@ -33,7 +33,16 @@ const imageArray = [[sampleOne, "Typography"],
 [sampleTwo, "SampleText"]
 ];
 const buttonText = ["All Categories", "Landscape", "Sculpture", "Land Art", "Painting", "Drawing", "3D Art", "Mock Up", "Footage"];
-const galleryImage = [imageOne, imageTwo, imageThree, imageFour, imageFive, imageSix, imageSeven, imageEight];
+const galleryImage = [
+  [imageOne, "Amy", 340, 10020, 1],
+  [imageTwo, "Tracey", 641, 7510, 1],
+  [imageThree, "Jing", 125, 15432, 1],
+  [imageFour, "Octavio", 951, 9510, 0],
+  [imageFive, "David", 111, 12341,0],
+  [imageSix, "Alex", 321, 8415, 1],
+  [imageSeven, "Mark", 456, 16941, 0],
+  [imageEight, "Susan", 123, 75148, 0],
+];
 
 export class GalleryList extends Component {
 
@@ -107,8 +116,8 @@ export class GalleryList extends Component {
         {sample.map((image) => { 
             return ( 
               <div>
-                <img src={image.assets === undefined ? image : image.assets.huge_thumb.url} alt="item" className="gallery__item"/>
-                <GalleryItemInfo key={uuid()} />
+                <img src={image.assets === undefined ? image[0] : image.assets.huge_thumb.url} alt="item" className="gallery__item"/>
+                <GalleryItemInfo key={uuid()} name={galleryImage[Math.floor(Math.random() * 8)][1]} like={Math.floor(Math.random() * 500)} view={Math.floor(Math.random() * 80000)} heart={Math.floor(Math.random() * 2)} />
               </div>
             ) 
           })}

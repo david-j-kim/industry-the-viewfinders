@@ -4,23 +4,29 @@ import eyeFill from '../../assets/icons/eye-fill.png';
 import filledHeart from '../../assets/icons/filled-heart.png';
 import unfilledHeart from '../../assets/icons/heart.png';
 
-function GalleryItemInfo() {
+function GalleryItemInfo( { name, like, view, heart }) {
 
+    let imgSource = "";
+    if (heart === 0 ) {
+        imgSource = unfilledHeart;
+    } else {
+        imgSource = filledHeart;
+    }
 
     return (
         
         <section className="item-info">
             <div className="item-info__left">
                 <img className="item-info__avatar" src="https://via.placeholder.com/150" />
-                <h4>Name</h4>
+                <h4>{name}</h4>
             </div>
 
             <div className="item-info__right">
-                <img className="item-info__heart" src={unfilledHeart} />
+                <img className="item-info__heart" src={imgSource} />
                 <img className="item-info__thumbs" src={thumbsUp} />
-                <h4>#</h4>
+                <h4>{like}</h4>
                 <img className="item-info__view" src={eyeFill} />
-                <h4>#</h4>
+                <h4>{view}</h4>
             </div>
 
 
