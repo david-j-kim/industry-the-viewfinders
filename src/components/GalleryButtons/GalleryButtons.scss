@@ -5,15 +5,15 @@
 
 .gallery-buttons {
     padding: 0.25rem 1.5rem;
-    margin: 1.5rem 0.5rem;
+    margin: 1rem 0.5rem;
     border: none;
     background-color: white;
     color: #757575;
+    font-weight: bold;
     border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px 1px;
 
     &:hover {
         color: $Shutter-Stock;
-        font-weight: bold;
     }
 }

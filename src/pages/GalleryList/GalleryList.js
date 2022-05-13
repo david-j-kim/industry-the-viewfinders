@@ -96,9 +96,9 @@ export class GalleryList extends Component {
           
         <div className="gallery__message">
           <h2>Welcome back, Bobby! What's inspiring you today?</h2>
-          <form onSubmit={this.handleChange}>
-            <input type="text" name="search" placeholder="Search for inspiration..."></input>
-            <button type="submit">Search</button>
+          <form className='gallery__form' onSubmit={this.handleChange}>
+            <input className='gallery__input' type="text" name="search" placeholder="Discover inspiration"></input>
+            <button className='gallery__search' type="submit">Search</button>
           </form>
           
         </div>
