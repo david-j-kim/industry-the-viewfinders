@@ -18,6 +18,33 @@
         color: black;
     }
 
+    &__text{
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    &__boxtag{
+        display: flex;
+        position: absolute;
+        gap: 0.5rem;
+        top: 2.7rem;
+        left: 0.5rem;
+    }
+
+    &__tag{
+        background-color: #D3D3D3;
+        padding: 0.4rem;
+        border-radius: 5px;
+        font-weight: bold;
+        width: fit-content;
+
+        &--alone{
+            position: absolute;
+            top: 2.7rem;
+            left: 0.5rem;
+        }
+    }
+
     &__feed{
         display: flex;
     }
@@ -48,10 +75,11 @@
     &__text--flex{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__text--input{
-        padding: 0.8rem 0.5rem;
+        padding: 1rem 0.5rem;
         border-radius: 4px;
         border: 1px solid black;
         width: 100%;
@@ -135,6 +163,23 @@
             height: 2rem;
         }
     }
-  
+
+    &__images{
+        display: flex;
+        align-items: center;
+    }
+
+    &__thumb{
+        margin: 1rem;
+    }
+
+    &__text--generate{
+        font-weight: 500;
+    }
+    
+    &__links{
+        text-decoration: none;
+        color: #0070F1;
+    }
   
 }

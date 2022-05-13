@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Popup from 'reactjs-popup';
 import Mona from '../../assets/images/MonaUpdate.png'
+import MonaThumb from '../../assets/images/MonaThumb.png'
+import Mask from '../../assets/images/MaskThumb.png'
 import './PopUp.scss'
 
 
@@ -21,19 +23,36 @@ const PopUp = () => {
                 <div>
                     <div className="popup__text">
                         <p className="popup__content">Project Tags (maximun 20)</p>
-                        <input className='popup__text--input' placeholder='Add up to 20 keywords to help people discover you project'></input>
+                        <input className='popup__text--input'></input>
+                        <div className='popup__boxtag'>
+                            <p className='popup__tag'>graphic design &times;</p>
+                            <p className='popup__tag'>funny &times;</p>
+                            <p className='popup__tag'>mona lisa &times;</p>
+                            <p className='popup__tag'>social media &times;</p>
+                        </div>
                         <p className='popup__text--color'>Suggested: image, graphic design, funny, branding, social media, art, portrait </p>
                     </div>
                     <div className="popup__text">
                         <p className="popup__content">Tools Used</p>
-                        <input className='popup__text--input' placeholder='What software, hardware, or materials did you use?'></input>
+                        <input className='popup__text--input'></input>
+                        <p className='popup__tag popup__tag--alone'>PicMonkey &times;</p>
                     </div>
-                    <div className="popup__text popup__text--flex">
-                        <div>
-                            <p className="popup__content">Associate Shutterstock Assets</p>
-                            <p className="">Generate links to asset sources found in this project</p>
+                    <div className="popup__text">
+                        <p className="popup__content">Associate Shutterstock Assets</p>
+                        <div className='popup__text--flex'>
+                            <p className="popup__text--generate">Generate links to asset sources found in this project</p>
+                            <button className='popup__button--generate'>Generate</button>
                         </div>
-                        <button className='popup__button--generate'>Generate</button>
+                    </div>
+                    <div>
+                        <div className='popup__images'>
+                            <img className='popup__thumb' alt='mona' src={MonaThumb}></img>
+                            <p>Royalty-free <a className='popup__links' href=''>stock illustration ID: 1886589148</a></p>
+                        </div>
+                        <div className='popup__images'>
+                            <img className='popup__thumb' alt='mask' src={Mask}></img>
+                            <p>Royalty-free <a className='popup__links' href=''>stock illustration ID: 1886589148</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
