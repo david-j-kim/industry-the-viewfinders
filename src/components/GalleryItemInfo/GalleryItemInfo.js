@@ -3,6 +3,7 @@ import thumbsUp from '../../assets/icons/thumb-up.png';
 import eyeFill from '../../assets/icons/eye-fill.png';
 import filledHeart from '../../assets/icons/filled-heart.png';
 import unfilledHeart from '../../assets/icons/heart.png';
+import avatarFemale from '../../assets/icons/female-avatar.jpg';
 
 function GalleryItemInfo( { name, like, view, heart }) {
 
@@ -17,7 +18,7 @@ function GalleryItemInfo( { name, like, view, heart }) {
         
         <section className="item-info">
             <div className="item-info__left">
-                <img className="item-info__avatar" src="https://via.placeholder.com/150" />
+                <img className="item-info__avatar" src={avatarFemale} />
                 <h4>{name}</h4>
             </div>
 
