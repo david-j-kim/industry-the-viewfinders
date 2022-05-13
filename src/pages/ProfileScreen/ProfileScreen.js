@@ -14,7 +14,6 @@ class Sample extends Component {
         axios
         .get(`${API_URL}/sample`)
         .then((res) => {
-            console.log(res.data.data);
             this.setState({sample: res.data.data})
         });
         
@@ -31,11 +30,11 @@ class Sample extends Component {
         return (
 
 
-
-            <div>{sample.map((image) => { 
-                return ( <img src={image.assets.huge_thumb.url} /> ) 
-            })}
-            </div>
+            <div>rightside</div>
+            // <div>{sample.map((image) => { 
+            //     return ( <img src={image.assets.huge_thumb.url} /> ) 
+            // })}
+            // </div>
 
         );
 

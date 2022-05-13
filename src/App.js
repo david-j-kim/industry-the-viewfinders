@@ -1,7 +1,7 @@
 //global
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ProfileScreen from './pages/ProfileScreen/ProfileScreen';
+import GalleryList from './pages/GalleryList/GalleryList';
 import Navigation from './components/Navigation/Navigation';
 
 
@@ -10,12 +10,14 @@ function App() {
     <Router>
         <Navigation />
 
+        <div> {/* put navbar to left */}
         <Switch>
-          <Route path='/' exact component={ProfileScreen} />
+          <Route path='/discover' exact component={GalleryList} />
 
 
 
         </Switch>
+        </div>
 
     </Router>
   );
